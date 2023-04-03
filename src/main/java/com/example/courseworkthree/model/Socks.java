@@ -1,2 +1,18 @@
-package com.example.courseworkthree.model;public class Socks {
+package com.example.courseworkthree.model;
+
+import com.fasterxml.jackson.annotation.JsonProperty;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+public class Socks {
+
+
+    private ColorSocks colorSocks;
+    private SizeSocks sizeSocks;
+    private int cottonPart;
+
 }
